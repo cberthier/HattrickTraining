@@ -4,18 +4,9 @@
     <div class="row">
       <hattrick-side-bar></hattrick-side-bar>
       <main class="col-md-9 ml-sm-auto col-lg-10 px-4 ht-content" role="main">
-        <h1>Hattric Training</h1>
-          <p>
-        <!-- use router-link component for navigation. -->
-        <!-- specify the link by passing the `to` prop. -->
-        <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-        <router-link to="/home">Home</router-link>
-        <router-link to="/playerDetails">Player Details</router-link>
-        <router-link to="/playerList">Player List</router-link>
-      </p>
-      <!-- route outlet -->
-      <!-- component matched by the route will render here -->
-      <router-view></router-view>
+        <!-- route outlet -->
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>
       </main>
     </div>
   </div>

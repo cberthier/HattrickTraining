@@ -2,7 +2,8 @@
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md fixed-top ht-header">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <router-link class="navbar-brand" to="/home">Hattrick Training</router-link>
+      <!--a class="navbar-brand" href="#">Fixed navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -18,7 +19,7 @@
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
         </ul>
-      </div>
+      </div-->
     </nav>
   </header>
 </template>
