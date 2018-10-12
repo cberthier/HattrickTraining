@@ -5,7 +5,9 @@
     </div>
 
     <div class="card-columns">
-      <player-card v-for="player in players" v-bind:player="player"></player-card>
+    <router-link to="playerDetails" v-for="player in players">
+      <player-card v-bind:player="player"></player-card>
+    </router-link>
     </div>
   </div>
 </template>
@@ -23,6 +25,7 @@ export default {
         players : 
       [
   {
+    id: 1,
     firstName: "Dominique",
     lastName: "Oudard",
     age: 15,
@@ -59,6 +62,7 @@ export default {
     }
   },
   {
+    id: 2,
     firstName: "Amir",
     lastName: "Kolli",
     age: 15,
@@ -95,6 +99,7 @@ export default {
     }
   },
   {
+    id: 3,
     firstName: "Seydi",
     lastName: "Zoglo",
     age: 16,
@@ -131,6 +136,7 @@ export default {
     }
   },
   {
+    id: 4,
     firstName: "Lionel",
     lastName: "Castro",
     age: 16,
@@ -167,6 +173,7 @@ export default {
     }
   },
   {
+    id: 5,
     firstName: "Florian",
     lastName: "Paineau",
     age: 16,
@@ -203,6 +210,7 @@ export default {
     }
   },
   {
+    id: 6,
     firstName: "Antoon",
     lastName: "Dehaes",
     age: 16,
@@ -239,6 +247,7 @@ export default {
     }
   },
   {
+    id: 7,
     firstName: "Aubin",
     lastName: "Ruault",
     age: 17,
@@ -275,6 +284,7 @@ export default {
     }
   },
   {
+    id: 8,
     firstName: "Yannick",
     lastName: "Bessières",
     age: 17,
@@ -311,6 +321,7 @@ export default {
     }
   },
   {
+    id: 9,
     firstName: "Yoann",
     lastName: "Corbin",
     age: 17,
@@ -347,6 +358,7 @@ export default {
     }
   },
   {
+    id: 10,
     firstName: "Dial",
     lastName: "Drame",
     age: 17,
@@ -383,6 +395,7 @@ export default {
     }
   },
   {
+    id: 11,
     firstName: "Aymeric",
     lastName: "Fardel",
     age: 17,
@@ -419,6 +432,7 @@ export default {
     }
   },
   {
+    id: 12,
     firstName: "Gilles",
     lastName: "Bouquet",
     age: 17,
@@ -455,6 +469,7 @@ export default {
     }
   },
   {
+    id: 13,
     firstName: "Grégory",
     lastName: "Boinet",
     age: 17,
@@ -491,6 +506,7 @@ export default {
     }
   },
   {
+    id: 14,
     firstName: "Nguyen",
     lastName: "Vien Sac",
     age: 17,
@@ -527,6 +543,7 @@ export default {
     }
   },
   {
+    id: 15,
     firstName: "Rodolphe",
     lastName: "Martinez",
     age: 18,
@@ -563,6 +580,7 @@ export default {
     }
   },
   {
+    id: 16,
     firstName: "Georges",
     lastName: "Ducroquet",
     age: 18,
