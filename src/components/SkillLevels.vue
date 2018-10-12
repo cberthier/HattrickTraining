@@ -5,9 +5,9 @@
   {{skillName}}
   </div>
   <div class="col-md-9" style="font-size: 0.5rem;">
-  <v-icon v-for="n in skill.skillLevel" name="square-full" class="skill-current"></v-icon>
-  <v-icon v-for="n in skill.maxSkillLevel - skill.skillLevel" name="square-full" class="skill-max">
-  </v-icon><v-icon v-for="n in 20 - skill.maxSkillLevel" name="square-full" class="skill-default"></v-icon>
+    <v-icon v-for="n in skill.skillLevel" name="square-full" class="skill-current"></v-icon>
+    <v-icon v-for="n in skill.maxSkillLevel - skill.skillLevel" name="square-full" class="skill-max"></v-icon>
+    <v-icon v-for="n in 20 - skill.maxSkillLevel" name="square-full" class="skill-default"></v-icon>
   </div>
   </div>
   </li>
@@ -18,8 +18,9 @@
   {{skillName}}
   </div>
   <div class="col-md-9">
-  <i v-for="n in skill.skillLevel" class="fas fa-square-full skill-current"></i><i v-for="n in skill.maxSkillLevel - skill.skillLevel" class="fas fa-square-full skill-max"></i><i v-for="n in 20 - skill.maxSkillLevel" class="fas fa-square-full skill-default"></i>
-  </div>
+    <v-icon v-for="n in skill.skillLevel" name="square-full" class="skill-current"></v-icon>
+    <v-icon v-for="n in skill.maxSkillLevel - skill.skillLevel" name="square-full" class="skill-max"></v-icon>
+    <v-icon v-for="n in 20 - skill.maxSkillLevel" name="square-full" class="skill-default"></v-icon>  </div>
   </div>
   </li>
 </template>
