@@ -25,7 +25,7 @@
       <div class="col-md-1">
       </div>
       <div class="col-md-3">
-        <!--radar-chart-player v-bind:chart="chart"></radar-chart-player-->
+        <radar-chart-player v-bind:chart="chart"></radar-chart-player>
       </div>
     </div>
 
@@ -68,131 +68,107 @@
 import SkillLevels from "./SkillLevels";
 import EvolutionCard from "./EvolutionCard";
 import CommentCard from "./CommentCard";
+import RadarChartPlayer from "./RadarChartPlayer";
 
 export default {
   name: "PlayerDetails",
-  components: {SkillLevels, EvolutionCard, CommentCard},
+  components: {SkillLevels, EvolutionCard, CommentCard, RadarChartPlayer},
   data: function(){
     return {
-      player: 
-      {
-    id: 16,
-    firstName: "Georges",
-    lastName: "Ducroquet",
-    age: 18,
-    speciality: "",
-    nationality: "France",
-    firstDayWithClub: "04-03-2018",
-    keeper: {
-      skillLevel: 6,
-      maxSkillLevel: 7
-    },
-    defending: {
-      skillLevel: 3,
-      maxSkillLevel: 3
-    },
-    playmaking: {
-      skillLevel: 0,
-      maxSkillLevel: 1
-    },
-    winger: {
-      skillLevel: 1,
-      maxSkillLevel: 1
-    },
-    passing: {
-      skillLevel: 0,
-      maxSkillLevel: 1
-    },
-    scoring: {
-      skillLevel: 1,
-      maxSkillLevel: 1
-    },
-    freeKick: {
-      skillLevel: 6,
-      maxSkillLevel: 6
-    },
-      keeper:{
-        skillLevel: 0,
-        maxSkillLevel: 2,
-        skillEvolutions: [
-          {
-            skillLevel: 0,
-            date: '2018-09-03'
-          }
-        ]
+      player: {
+        id: 16,
+        firstName: "Georges",
+        lastName: "Ducroquet",
+        age: 18,
+        speciality: "",
+        nationality: "France",
+        firstDayWithClub: "04-03-2018",
+        keeper:{
+          skillLevel: 0,
+          maxSkillLevel: 2,
+          skillEvolutions: [
+            {
+              skillLevel: 0,
+              date: '2018-09-03'
+            }
+          ]
+        },
+        defending:{
+          skillLevel:2,
+          maxSkillLevel:5,
+          skillEvolutions: [
+            {
+              skillLevel: 0,
+              date: '2018-09-03'
+            },
+            {
+              skillLevel: 2,
+              date: '2018-09-17'
+            }
+          ]
+        },
+        playmaking:{
+          skillLevel:0,
+          maxSkillLevel:5,
+          skillEvolutions: [
+            {
+              skillLevel: 0,
+              date: '2018-09-03'
+            }
+          ]
+        },
+        winger:{
+          skillLevel:0,
+          maxSkillLevel:7,
+          skillEvolutions: [
+            {
+              skillLevel: 0,
+              date: '2018-09-03'
+            }
+          ]
+        },
+        passing:{
+          skillLevel:4,
+          maxSkillLevel:4,
+          skillEvolutions: [
+            {
+              skillLevel: 0,
+              date: '2018-09-03'
+            },
+            {
+              skillLevel: 1,
+              date: '2018-09-10'
+            },
+            {
+              skillLevel: 2,
+              date: '2018-09-17'
+            }
+          ]
+        },
+        scoring:{
+          skillLevel:0,
+          maxSkillLevel:3,
+          skillEvolutions: [
+            {
+              skillLevel: 0,
+              date: '2018-09-03'
+            }
+          ]
+        },
+        freeKick:{
+          skillLevel:0,
+          maxSkillLevel:2,
+          skillEvolutions: [
+            {
+              skillLevel: 0,
+              date: '2018-09-03'
+            }
+          ]
+        }
       },
-      defending:{
-        skillLevel:2,
-        maxSkillLevel:5,
-        skillEvolutions: [
-          {
-            skillLevel: 0,
-            date: '2018-09-03'
-          },
-          {
-            skillLevel: 2,
-            date: '2018-09-17'
-          }
-        ]
-      },
-      playmaking:{
-        skillLevel:0,
-        maxSkillLevel:5,
-        skillEvolutions: [
-          {
-            skillLevel: 0,
-            date: '2018-09-03'
-          }
-        ]
-      },
-      winger:{
-        skillLevel:0,
-        maxSkillLevel:7,
-        skillEvolutions: [
-          {
-            skillLevel: 0,
-            date: '2018-09-03'
-          }
-        ]
-      },
-      passing:{
-        skillLevel:4,
-        maxSkillLevel:4,
-        skillEvolutions: [
-          {
-            skillLevel: 0,
-            date: '2018-09-03'
-          },
-          {
-            skillLevel: 1,
-            date: '2018-09-10'
-          },
-          {
-            skillLevel: 2,
-            date: '2018-09-17'
-          }
-        ]
-      },
-      scoring:{
-        skillLevel:0,
-        maxSkillLevel:3,
-        skillEvolutions: [
-          {
-            skillLevel: 0,
-            date: '2018-09-03'
-          }
-        ]
-      },
-      freeKick:{
-        skillLevel:0,
-        maxSkillLevel:2,
-        skillEvolutions: [
-          {
-            skillLevel: 0,
-            date: '2018-09-03'
-          }
-        ]
-      }
+      chart: {
+        backgroundColorNow: '#FFCA2A',
+        backgroundColorFutur: 'rgba(93,253,203,0.3)'
       }
     };
   }
