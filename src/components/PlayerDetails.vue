@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    
+
     <div class="row">
       <div class="col-md-auto">
         <h3 class="border-bottom">Comments:</h3>

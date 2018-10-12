@@ -1,14 +1,14 @@
 <template>
   <div class="col-md-2 d-none d-md-block ht-sidebar">
     <div class="ht-sidebar-sticky">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <router-link class="nav-link active" to="/playerList">Player List</router-link>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <router-link class="nav-link active" to="/playerList">Player List</router-link>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>

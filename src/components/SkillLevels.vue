@@ -1,28 +1,28 @@
 <template>
   <li v-if="thumbnail" class="list-group-item">
-  <div class="row">
-  <div class="col-md-3" style="font-size: 0.8rem;">
-  {{skillName}}
-  </div>
-  <div class="col-md-9" style="font-size: 0.5rem;">
-    <v-icon v-for="n in skill.skillLevel" name="square-full" class="skill-current"></v-icon>
-    <v-icon v-for="n in skill.maxSkillLevel - skill.skillLevel" name="square-full" class="skill-max"></v-icon>
-    <v-icon v-for="n in 20 - skill.maxSkillLevel" name="square-full" class="skill-default"></v-icon>
-  </div>
-  </div>
+    <div class="row">
+      <div class="col-md-3" style="font-size: 0.8rem;">
+        {{skillName}}
+      </div>
+      <div class="col-md-9" style="font-size: 0.5rem;">
+        <v-icon v-for="n in skill.skillLevel" name="square-full" class="skill-current"></v-icon>
+        <v-icon v-for="n in skill.maxSkillLevel - skill.skillLevel" name="square-full" class="skill-max"></v-icon>
+        <v-icon v-for="n in 20 - skill.maxSkillLevel" name="square-full" class="skill-default"></v-icon>
+      </div>
+    </div>
   </li>
 
   <li v-else class="list-group-item">
-  <div class="row">
-  <div class="col-md-3">
-  {{skillName}}
-  </div>
-  <div class="col-md-9">
-    <v-icon v-for="n in skill.skillLevel" name="square-full" class="skill-current"></v-icon>
-    <v-icon v-for="n in skill.maxSkillLevel - skill.skillLevel" name="square-full" class="skill-max"></v-icon>
-    <v-icon v-for="n in 20 - skill.maxSkillLevel" name="square-full" class="skill-default"></v-icon>  </div>
-  </div>
-  </li>
+    <div class="row">
+      <div class="col-md-3">
+        {{skillName}}
+      </div>
+      <div class="col-md-9">
+        <v-icon v-for="n in skill.skillLevel" name="square-full" class="skill-current"></v-icon>
+        <v-icon v-for="n in skill.maxSkillLevel - skill.skillLevel" name="square-full" class="skill-max"></v-icon>
+        <v-icon v-for="n in 20 - skill.maxSkillLevel" name="square-full" class="skill-default"></v-icon>  </div>
+      </div>
+    </li>
 </template>
 
 <script>

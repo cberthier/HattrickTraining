@@ -33,7 +33,3 @@ new Vue({
   components: { App },
   template: "<App/>"
 });
-
-/*const app = new Vue({
-  router
-}).$mount("#app");*/
