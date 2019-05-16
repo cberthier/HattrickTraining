@@ -35,16 +35,8 @@
       </div>
     </div>
     <div class="row" id="evolutions">
-      <div class="col">
-        <div class="card-columns">
-          <evolution-card v-bind:skill-name="'Keeper'" v-bind:skill="player.keeper"></evolution-card>
-          <evolution-card v-bind:skill-name="'Defending'" v-bind:skill="player.defending"></evolution-card>
-          <evolution-card v-bind:skill-name="'Playmaking'" v-bind:skill="player.playmaking"></evolution-card>
-          <evolution-card v-bind:skill-name="'Winger'" v-bind:skill="player.winger"></evolution-card>
-          <evolution-card v-bind:skill-name="'Passing'" v-bind:skill="player.passing"></evolution-card>
-          <evolution-card v-bind:skill-name="'Scoring'" v-bind:skill="player.scoring"></evolution-card>
-          <evolution-card v-bind:skill-name="'Free kick'" v-bind:skill="player.freeKick"></evolution-card>
-        </div>
+      <div class="col-12">
+        <evolution-card v-bind:skill-name="'Free kick'" v-bind:skill="player.freeKick"></evolution-card>
       </div>
     </div>
 

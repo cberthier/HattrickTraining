@@ -38,12 +38,14 @@ export default {
             label: "Now",
             data: [0, 2, 0, 0, 4, 0, 0],
             backgroundColor: this.chart.backgroundColorNow,
+           borderColor: this.chart.backgroundColorNow,
             pointStyle: "line"
           },
           {
             label: "Futur",
             data: [2, 5, 5, 7, 4, 3, 2],
-            backgroundColor: this.hexToRgbA(this.chart.backgroundColorNow) //this.chart.backgroundColorFutur
+            backgroundColor: this.hexToRgbA(this.chart.backgroundColorNow), //this.chart.backgroundColorFutur
+            borderColor: this.chart.backgroundColorNow
           }
         ]
       },
@@ -53,9 +55,15 @@ export default {
         legend: {
           display: true,
           labels: {
-            fontColor: "#FFFFFF"
+            fontColor: "#FFFFFF",
+            fontSize: 18
           }
         },
+      tooltips:{
+        mode: 'index',
+        intersect: false,
+        axis: 'xy'
+      },
         scale: {
           display: true,
           gridLines: {
@@ -67,10 +75,11 @@ export default {
           ticks: {
             stepSize: 1,
             suggestedMin: -1,
-            backdropColor: "rgba(0,0,0,0)"
+            showLabelBackdrop: false
           },
           pointLabels: {
-            fontColor: this.chart.backgroundColorNow
+            fontColor: this.chart.backgroundColorNow,
+            fontSize: 12
           }
         }
       }
