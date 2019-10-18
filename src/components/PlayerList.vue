@@ -5,7 +5,7 @@
     </div>
 
     <div class="card-columns">
-      <router-link to="playerDetails" v-for="player in players">
+      <router-link to="playerDetails" v-for="player in players" v-bind:key="player.id">
         <player-card v-bind:player="player"></player-card>
       </router-link>
     </div>

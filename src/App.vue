@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <hattrick-header></hattrick-header>
-    <div class="row">
-      <hattrick-side-bar></hattrick-side-bar>
-      <main class="col-md-9 ml-sm-auto col-lg-10 px-4 ht-content" role="main">
-        <!-- route outlet -->
-        <!-- component matched by the route will render here -->
-        <router-view></router-view>
-      </main>
-    </div>
+    <nav-bar></nav-bar>
+    <main class="col-md-12 ml-sm-auto col-lg-12 px-4 ht-content" role="main">
+      <!-- route outlet -->
+      <!-- component matched by the route will render here -->
+      <router-view></router-view>
+    </main>
+    <footer-bar></footer-bar>
   </div>
 </template>
 
@@ -17,8 +15,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'vue-awesome/icons';
 
-import HattrickHeader from "./components/HattrickHeader";
-import HattrickSideBar from "./components/HattrickSideBar";
+import NavBar from "./components/layout/NavBar";
+import FooterBar from "./components/layout/FooterBar";
 import Home from "./components/Home";
 import PlayerDetails from "./components/PlayerDetails.vue";
 import PlayerList from "./components/PlayerList.vue";
@@ -26,27 +24,22 @@ import PlayerList from "./components/PlayerList.vue";
 export default {
   name: "App",
   components: {
-    HattrickHeader, HattrickSideBar, Home, PlayerDetails, PlayerList
+    NavBar, FooterBar, Home, PlayerDetails, PlayerList
   }
 };
 </script>
 
 <style>
 #app {
-  //font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  //text-align: center;
-  //color: #2c3e50;
-  //margin-top: 60px;
 }
 
-[role="main"] {
-  padding-top: 48px;
-}
 body {
   background-color: #356933;
   color: #FFFFFF;
+
+  padding-top: 5rem;
 }
 
 .list-group .list-group-item {
