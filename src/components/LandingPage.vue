@@ -42,7 +42,7 @@ export default {
 
 .card-body {
   text-align: center;
-  
+
   background-color: #ffca2a;
   color: #356933;
 }

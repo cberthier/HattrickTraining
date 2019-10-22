@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable="lg" type="dark" fixed="top" class="ht-header">
-    <b-navbar-brand href="#" to="LandingPage">Football Training Manager</b-navbar-brand>
+    <b-navbar-brand href="#" to="/">Football Training Manager</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
