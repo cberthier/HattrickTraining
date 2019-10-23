@@ -57,13 +57,13 @@
 </template>
 
 <script>
-import SkillLevels from "./SkillLevels";
-import EvolutionCard from "./EvolutionCard";
-import CommentCard from "./CommentCard";
-import RadarChartPlayer from "./RadarChartPlayer";
+import SkillLevels from "@/components/SkillLevels";
+import EvolutionCard from "@/components/EvolutionCard";
+import CommentCard from "@/components/CommentCard";
+import RadarChartPlayer from "@/components/RadarChartPlayer";
 
 export default {
-  name: "PlayerDetails",
+  name: "SeniorPlayerDetails",
   components: {SkillLevels, EvolutionCard, CommentCard, RadarChartPlayer},
   data: function(){
     return {

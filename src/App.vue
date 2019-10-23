@@ -17,14 +17,11 @@ import 'vue-awesome/icons';
 
 import NavBar from "./components/layout/NavBar";
 import FooterBar from "./components/layout/FooterBar";
-import Home from "./components/Home";
-import PlayerDetails from "./components/PlayerDetails.vue";
-import PlayerList from "./components/PlayerList.vue";
 
 export default {
   name: "App",
   components: {
-    NavBar, FooterBar, Home, PlayerDetails, PlayerList
+    NavBar, FooterBar
   }
 };
 </script>

@@ -4,21 +4,19 @@
       <h1>Players list</h1>
     </div>
 
-    <div class="card-columns">
-      <router-link to="playerDetails" v-for="player in players" v-bind:key="player.id">
-        <player-card v-bind:player="player"></player-card>
-      </router-link>
-    </div>
+    <b-card-group deck>
+        <senior-player-card v-for="player in players" v-bind:key="player.id" v-bind:player="player"></senior-player-card>
+    </b-card-group>
   </div>
 </template>
 
 <script>
-import PlayerCard from "./PlayerCard";
+import SeniorPlayerCard from "./SeniorPlayerCard";
 
 export default {
-  name: "PlayerList",
+  name: "SeniorPlayerList",
   components: {
-    PlayerCard
+    SeniorPlayerCard
   },
   data: function() {
     return {
@@ -623,4 +621,5 @@ export default {
 
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
+
   </style>
