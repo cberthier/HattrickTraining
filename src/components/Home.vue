@@ -125,43 +125,4 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.card {
-  background-color: #ffca2a;
-}
-.card-action {
-  text-align: center;
-}
-
- .card-action2 {
-   padding: 10px;
- }
-
-.card-action .card-title{
-  margin-top: 10px;
-}
-
-.card-action .card-description{
-  margin-top: 10px;
-}
-
-.card-action .logo{
-  display: block;
-  position: relative;
-  text-align: center;
-  border: 1px solid #e5e5e5;
-  border-radius: 50%;
-  width: 130px;
-  line-height: 130px;
-  height: 130px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-action .logo .fa-icon{
-  font-size: 4em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
 </style>

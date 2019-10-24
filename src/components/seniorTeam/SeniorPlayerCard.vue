@@ -22,7 +22,7 @@
         <v-icon v-for="n in 2" name="square-full" class="skill-default"></v-icon>
       </b-col>
     </b-row>
-    <b-link class="stretched-link" href="/#/playerDetails"/>
+    <b-link class="stretched-link" href="/#/seniorTeam/playerDetails"/>
   </b-card>
 </template>
 

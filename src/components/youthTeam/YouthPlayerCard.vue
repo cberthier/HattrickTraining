@@ -8,7 +8,7 @@
         <b-badge pill>AT</b-badge>
       </small>
     </h5>
-    <b-link class="stretched-link" href="/#/playerDetails"/>
+    <b-link class="stretched-link" href="/#/youthTeam/playerDetails"/>
   </b-card>
 </template>
 

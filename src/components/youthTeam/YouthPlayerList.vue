@@ -26,7 +26,7 @@ export default {
         {
           text: 'Home',
           icon: 'home',
-          to: 'home'
+          to: '/Home'
         },
         {
           text: 'My Young Team',

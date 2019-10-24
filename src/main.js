@@ -13,6 +13,7 @@ import SeniorPlayerDetails from "./components/seniorTeam/SeniorPlayerDetails.vue
 import SeniorPlayerList from "./components/seniorTeam/SeniorPlayerList";
 import YouthPlayerList from "./components/youthTeam/YouthPlayerList";
 import YouthPlayerDetails from "./components/youthTeam/YouthPlayerDetails";
+import Components from "./components/Components";
 
 Vue.config.productionTip = false;
 
@@ -61,6 +62,11 @@ const routes = [
     path: "/youthTeam/playerDetails",
     name: "Player Details Page",
     component: YouthPlayerDetails
+  },
+  {
+    path: "/components",
+    name: "Components Page",
+    component: Components
   }
 ];
 

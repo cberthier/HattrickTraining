@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  background-color: #ffca2a;
+}
 .card.player-card .card-header {
   color: #000000;
 }
