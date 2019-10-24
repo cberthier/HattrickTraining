@@ -43,12 +43,22 @@ const routes = [
     component: Home
   },
   {
-    path: "/playerList",
+    path: "/seniorTeam/playerList",
+    name: "Player List Page",
+    component: SeniorPlayerList
+  },
+  {
+    path: "/seniorTeam/playerDetails",
+    name: "Player Details Page",
+    component: SeniorPlayerDetails
+  },
+  {
+    path: "/youthTeam/playerList",
     name: "Player List Page",
     component: YouthPlayerList
   },
   {
-    path: "/playerDetails",
+    path: "/youthTeam/playerDetails",
     name: "Player Details Page",
     component: YouthPlayerDetails
   }

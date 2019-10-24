@@ -14,13 +14,14 @@
         </b-card-body>
       </b-col>
     </b-row>
+    <b-link class="stretched-link" :href="href"/>
   </b-card>
 </template>
 
 <script>
 export default {
   name: "ActionCardHorizontal",
-  props: ['title','logo', 'description']
+  props: ['title','logo', 'description', 'href']
 };
 </script>
 
@@ -65,5 +66,18 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+/* Normaly on bootstrap */
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
 }
 </style>
