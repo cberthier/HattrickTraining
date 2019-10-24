@@ -1,6 +1,5 @@
 <template>
   <main>
-  
     <div>
       <h1 class="border-bottom">Senior Team:</h1>
       <b-card-group deck>

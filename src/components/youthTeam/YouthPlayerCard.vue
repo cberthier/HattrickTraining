@@ -8,20 +8,6 @@
         <b-badge pill>AT</b-badge>
       </small>
     </h5>
-    <b-row>
-      <b-col cols="2" v-b-tooltip.hover title="Form" style="z-index: 2;"><v-icon name="heartbeat" scale="1"/></b-col>
-      <b-col cols="10">
-        <v-icon v-for="n in 6" name="square-full" class="skill-current"></v-icon>
-        <v-icon v-for="n in 2" name="square-full" class="skill-default"></v-icon>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col cols="2" v-b-tooltip.hover title="Stamina" style="z-index: 2;"><v-icon name="battery-half" scale="1"/></b-col>
-      <b-col cols="10">
-        <v-icon v-for="n in 6" name="square-full" class="skill-current"></v-icon>
-        <v-icon v-for="n in 2" name="square-full" class="skill-default"></v-icon>
-      </b-col>
-    </b-row>
     <b-link class="stretched-link" href="/#/playerDetails"/>
   </b-card>
 </template>
@@ -30,7 +16,7 @@
 import SkillLevels from "@/components/SkillLevels";
 
 export default {
-  name: "SeniorPlayerCard",
+  name: "YouthPlayerCard",
   props: ["player"],
   components: { SkillLevels }
 };

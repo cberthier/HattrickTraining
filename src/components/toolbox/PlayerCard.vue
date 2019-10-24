@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card.player-card .card-header {
   color: #000000;
 }
