@@ -3,6 +3,8 @@
 import Vue from "vue";
 import BootstrapVue from "bootstrap-vue";
 import VueAwesome from "vue-awesome/components/Icon";
+import Progress from "vue-multiple-progress";
+import ElementUI from "element-ui";
 import VueRouter from "vue-router";
 import App from "./App";
 import LandingPage from "./components/LandingPage.vue";
@@ -21,6 +23,8 @@ Vue.component("v-icon", VueAwesome);
 
 Vue.use(BootstrapVue);
 Vue.use(VueRouter);
+Vue.use(Progress);
+Vue.use(ElementUI);
 
 const routes = [
   {
